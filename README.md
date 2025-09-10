@@ -14,6 +14,14 @@ The drivers used or available in this code example are listed below.
 - [JPEG decode driver user guide (TRAVEO™ T2G cluster series)](https://www.infineon.com/assets/row/public/documents/10/44/infineon-traveo-t2g-jpeg-decode-user-guide-usermanual-en.pdf?fileId=8ac78c8c8c3de074018c816028cf0ca8)
   - Chapter 2: JPEG decode driver
 
+## Requirements
+
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.5 or later (tested with v3.5)
+
+## Supported toolchains (make variable 'TOOLCHAIN')
+
+- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
+
 ## Device
 
 The device used in this demonstration is:
@@ -61,9 +69,9 @@ ISO/IEC10918-1
 
 More details can be found in:
 - TRAVEO&trade; T2G CYT4DN
-    - [Technical Reference Manual (TRM)](https://documentation.infineon.com/traveo/docs/mch1706536194727)
-    - [Registers TRM](https://documentation.infineon.com/traveo/docs/mch1706536194727)
-    - [Data Sheet](https://documentation.infineon.com/traveo/docs/jbh1706536144484)
+    - [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents)
+    - [Registers TRM](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents)
+    - [Data Sheet](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents)
 
 ## Hardware setup
 
@@ -117,7 +125,7 @@ After code compilation, perform the following steps to flashing the device:
 
 Relevant Application notes are:
 
-- [AN235305](https://www.infineon.com/gated/infineon-an235305-getting-started-with-traveo-t2g-family-mcus-in-modustoolbox-applicationnotes-en_ef8d5799-c199-4f23-83a2-4fd63183071f) - Getting started with TRAVEO&trade; T2G family MCUs in ModusToolbox&trade;
+- [AN235305](https://www.infineon.com/assets/row/public/documents/10/42/infineon-an235305-getting-started-with-traveo-t2g-family-mcus-in-modustoolbox-applicationnotes-en.pdf) - Getting started with TRAVEO&trade; T2G family MCUs in ModusToolbox&trade;
 
 
 ModusToolbox&trade;  is available online:
