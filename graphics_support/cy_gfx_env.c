@@ -743,7 +743,7 @@ cy_gfxenv_en_result_t Cy_GfxEnv_EnableHdmiTestImage(cy_gfxenv_en_disp_custom_typ
     else if ((u8DispSelConfig == MAP_LVDS_CH_1_CFG_1) || (u8DispSelConfig == MAP_LVDS_CH_DUAL_CFG_0))
     {
         u8DispClkPath = 5; /* CY_SYSCLK_HFCLK_IN_CLKPATH5*/
-        enSysClkRetVal = Cy_SysClk_Pll400MDisable(u8DispClkPath);
+        enSysClkRetVal = Cy_SysClk_Pll400MDisable(u8DispClkPath -1 );
         CY_ASSERT(enSysClkRetVal == CY_SYSCLK_SUCCESS);
 
         /* Enable the clock path for bothe the FPDLINK */
@@ -761,9 +761,9 @@ cy_gfxenv_en_result_t Cy_GfxEnv_EnableHdmiTestImage(cy_gfxenv_en_disp_custom_typ
             .outputFreq   = u32DispClkPllHz,
             .outputMode   = CY_SYSCLK_FLLPLL_OUTPUT_AUTO,
         };
-        enSysClkRetVal = Cy_SysClk_Pll400MConfigure(u8DispClkPath, &stcPllCfg);
+        enSysClkRetVal = Cy_SysClk_Pll400MConfigure(u8DispClkPath -1 , &stcPllCfg);
         CY_ASSERT(enSysClkRetVal == CY_SYSCLK_SUCCESS);
-        enSysClkRetVal = Cy_SysClk_Pll400MEnable(u8DispClkPath, 10000);
+        enSysClkRetVal = Cy_SysClk_Pll400MEnable(u8DispClkPath -1 , 10000);
         CY_ASSERT(enSysClkRetVal == CY_SYSCLK_SUCCESS);
         Cy_SysClk_PllGetFrequency(u8DispClkPath);    
     }
